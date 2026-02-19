@@ -1,0 +1,2909 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='electriccardata_clean (ev_project)' inline='true' name='federated.05qfviv15hio7p18w7kqm1bgh25n' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1mfcmrz05cj0yu1c358sb1whletx'>
+            <connection class='mysql' dbname='ev_project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1mfcmrz05cj0yu1c358sb1whletx' name='electriccardata_clean' table='[electriccardata_clean]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Brand</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Brand]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Brand</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Model</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Model]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Model</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AccelSec</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[AccelSec]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>AccelSec</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TopSpeed_KmH</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[TopSpeed_KmH]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>TopSpeed_KmH</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Range_Km</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Range_Km]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Range_Km</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Efficiency_WhKm</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Efficiency_WhKm]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Efficiency_WhKm</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FastCharge_KmH</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[FastCharge_KmH]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>FastCharge_KmH</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RapidCharge</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[RapidCharge]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>RapidCharge</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PowerTrain</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PowerTrain]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>PowerTrain</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PlugType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[PlugType]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>PlugType</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BodyStyle</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BodyStyle]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>BodyStyle</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Seats</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Seats]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>Seats</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PriceEuro</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[PriceEuro]</local-name>
+            <parent-name>[electriccardata_clean]</parent-name>
+            <remote-alias>PriceEuro</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Accel Sec' datatype='real' name='[AccelSec]' role='measure' type='quantitative' />
+      <column caption='Body Style' datatype='string' name='[BodyStyle]' role='dimension' type='nominal' />
+      <column caption='Total Global Brands' datatype='integer' name='[Calculation_1063817421295616]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNTD([Brand])' />
+      </column>
+      <column caption='Efficiency WhKm' datatype='integer' name='[Efficiency_WhKm]' role='measure' type='quantitative' />
+      <column caption='FastCharge KmH' datatype='integer' name='[FastCharge_KmH]' role='measure' type='quantitative' />
+      <column caption='Plug Type' datatype='string' name='[PlugType]' role='dimension' type='nominal' />
+      <column caption='Power Train' datatype='string' name='[PowerTrain]' role='dimension' type='nominal' />
+      <column caption='Price Euro' datatype='integer' name='[PriceEuro]' role='measure' type='quantitative' />
+      <column caption='Range Km' datatype='integer' name='[Range_Km]' role='measure' type='quantitative' />
+      <column caption='Rapid Charge' datatype='string' name='[RapidCharge]' role='dimension' type='nominal' />
+      <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
+      <column caption='electriccardata_clean' datatype='table' name='[__tableau_internal_object_id__].[electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C]' role='measure' type='quantitative' />
+      <column-instance column='[BodyStyle]' derivation='None' name='[none:BodyStyle:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:BodyStyle:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;SUV&quot;</bucket>
+            </map>
+            <map to='#306a93'>
+              <bucket>&quot;Station&quot;</bucket>
+            </map>
+            <map to='#347da0'>
+              <bucket>&quot;SPV&quot;</bucket>
+            </map>
+            <map to='#368fae'>
+              <bucket>&quot;Sedan&quot;</bucket>
+            </map>
+            <map to='#45a2b9'>
+              <bucket>&quot;Pickup&quot;</bucket>
+            </map>
+            <map to='#65b3c2'>
+              <bucket>&quot;MPV&quot;</bucket>
+            </map>
+            <map to='#81c3cb'>
+              <bucket>&quot;Liftback&quot;</bucket>
+            </map>
+            <map to='#9dd3d1'>
+              <bucket>&quot;Hatchback&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;Cabrio&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='electriccardata_clean' id='electriccardata_clean_1FA3A17F38854FC695276509CB6AD94C'>
+            <properties context=''>
+              <relation connection='mysql.1mfcmrz05cj0yu1c358sb1whletx' name='electriccardata_clean' table='[electriccardata_clean]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='evindia (ev_project)' inline='true' name='federated.10lsyn21pfw0981475trq0e1vfow' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.0adiy7v1vpneqf11o9yeu1rq17vm'>
+            <connection class='mysql' dbname='ev_project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.0adiy7v1vpneqf11o9yeu1rq17vm' name='evindia' table='[evindia]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Car</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Car]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>Car</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Style</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Style]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>Style</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Range</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Range]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>Range</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Transmission</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Transmission]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>Transmission</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VehicleType</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[VehicleType]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>VehicleType</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PriceRange(Lakhs)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[PriceRange(Lakhs)]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>PriceRange(Lakhs)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Capacity</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Capacity]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>Capacity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BootSpace</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BootSpace]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>BootSpace</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BaseModel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[BaseModel]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>BaseModel</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TopModel</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[TopModel]</local-name>
+            <parent-name>[evindia]</parent-name>
+            <remote-alias>TopModel</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Base Model' datatype='string' name='[BaseModel]' role='dimension' type='nominal' />
+      <column caption='Boot Space' datatype='string' name='[BootSpace]' role='dimension' type='nominal' />
+      <column caption='Brand (India)' datatype='string' name='[Calculation_1063817431527425]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='LEFT([Car], FIND([Car], &quot; &quot;) - 1)' />
+      </column>
+      <column datatype='string' name='[Style]' role='dimension' type='nominal' />
+      <column caption='Top Model' datatype='string' name='[TopModel]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Transmission]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type' datatype='string' name='[VehicleType]' role='dimension' type='nominal' />
+      <column caption='evindia' datatype='table' name='[__tableau_internal_object_id__].[evindia_D38DCBA4F0A94BB2B4E24F7A4C721112]' role='measure' type='quantitative' />
+      <column-instance column='[Style]' derivation='None' name='[none:Style:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Transmission]' derivation='None' name='[none:Transmission:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Transmission:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#45a2b9'>
+              <bucket>&quot;Automatic&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Style:nk]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>&quot;Subcompact Sedan&quot;</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>&quot;Subcompact MPV&quot;</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>&quot;Premium Sports Sedan&quot;</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>&quot;Premium Midsize Sedan&quot;</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>&quot;Premium Fullsize SUV&quot;</bucket>
+            </map>
+            <map to='#9ac6e4'>
+              <bucket>&quot;Premium Coupe&quot;</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>&quot;Compact SUV&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='evindia' id='evindia_D38DCBA4F0A94BB2B4E24F7A4C721112'>
+            <properties context=''>
+              <relation connection='mysql.0adiy7v1vpneqf11o9yeu1rq17vm' name='evindia' table='[evindia]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='electric_vehicle_charging_station_list (ev_project) (2)' inline='true' name='federated.0j084j2017im3o1b0ay4l0203fmr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1qjwxnb1n2v97w1e264sd0tz3zbh'>
+            <connection class='mysql' dbname='ev_project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1qjwxnb1n2v97w1e264sd0tz3zbh' name='electric_vehicle_charging_station_list' table='[electric_vehicle_charging_station_list]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>address</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[address]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>address</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>aux addres</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[aux addres]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>aux addres</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>power</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[power]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>power</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>service</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[service]</local-name>
+            <parent-name>[electric_vehicle_charging_station_list]</parent-name>
+            <remote-alias>service</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='electric_vehicle_charging_station_list' datatype='table' name='[__tableau_internal_object_id__].[electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3]' role='measure' type='quantitative' />
+      <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+      <column caption='Aux Addres' datatype='string' name='[aux addres]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Power' datatype='string' name='[power]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Service' datatype='string' name='[service]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' palette='green_10_0' type='palette'>
+            <map to='#24693d'>
+              <bucket>&quot;DC-001&quot;</bucket>
+            </map>
+            <map to='#5ea654'>
+              <bucket>&quot;CCS/ChADEMO/ Type 2 AC&quot;</bucket>
+            </map>
+            <map to='#b3e0a6'>
+              <bucket>&quot;AC-001&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:region:nk]' palette='winter_10_0' type='palette'>
+            <map to='#6b6b6b'>
+              <bucket>&quot;NRANVP&quot;</bucket>
+            </map>
+            <map to='#90728f'>
+              <bucket>&quot;ANERT&quot;</bucket>
+            </map>
+            <map to='#9d9b3d'>
+              <bucket>&quot;Maha Metro&quot;</bucket>
+            </map>
+            <map to='#b9a0b4'>
+              <bucket>&quot;CMRL&quot;</bucket>
+            </map>
+            <map to='#bab2ae'>
+              <bucket>&quot;SDMC&quot;</bucket>
+            </map>
+            <map to='#cecb76'>
+              <bucket>&quot;NDMC&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;NKDA&quot;</bucket>
+            </map>
+            <map to='#ff9888'>
+              <bucket>&quot;Noida Authority&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='electric_vehicle_charging_station_list' id='electric_vehicle_charging_station_list_2A000E895345419995C0FAD94A1A6DE3'>
+            <properties context=''>
+              <relation connection='mysql.1qjwxnb1n2v97w1e264sd0tz3zbh' name='electric_vehicle_charging_station_list' table='[electric_vehicle_charging_station_list]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Offline' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Brands According to BodyStyle'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Brands According to BodyStyle</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column caption='Body Style' datatype='string' name='[BodyStyle]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='Count' name='[cnt:Model:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[BodyStyle]' derivation='None' name='[none:BodyStyle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' />
+              <size column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]' />
+              <text column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{62475940-35C5-4DCC-9D27-86C8F8ADDFF2}' />
+    </worksheet>
+    <worksheet name='Brands Filtered by Power Train Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>Brands Filtered by Power Train Type</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column caption='Power Train' datatype='string' name='[PowerTrain]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='Count' name='[cnt:Model:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PowerTrain]' derivation='None' name='[none:PowerTrain:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]' included-values='in-range'>
+            <min>2</min>
+            <max>13</max>
+          </filter>
+          <filter class='categorical' column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:PowerTrain:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:PowerTrain:nk]' member='&quot;AWD&quot;' />
+              <groupfilter function='member' level='[none:PowerTrain:nk]' member='&quot;FWD&quot;' />
+              <groupfilter function='member' level='[none:PowerTrain:nk]' member='&quot;RWD&quot;' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:PowerTrain:nk]</column>
+            <column>[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]' scope='cols' value='Number of Models' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]</rows>
+        <cols>[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]</cols>
+      </table>
+      <simple-id uuid='{238DF87B-8FCD-4EC1-A318-F37950CAE2D2}' />
+    </worksheet>
+    <worksheet name='Charging Stations by Region and Type in India'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Charging Stations by Region and Type in India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electric_vehicle_charging_station_list (ev_project) (2)' name='federated.0j084j2017im3o1b0ay4l0203fmr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j084j2017im3o1b0ay4l0203fmr'>
+            <column caption='Address' datatype='string' name='[address]' role='dimension' type='nominal' />
+            <column-instance column='[address]' derivation='Count' name='[cnt:address:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0j084j2017im3o1b0ay4l0203fmr].[cnt:address:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0j084j2017im3o1b0ay4l0203fmr].[cnt:address:qk]' scope='cols' value='Number of Charging Stations' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='188' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#898989' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]</rows>
+        <cols>[federated.0j084j2017im3o1b0ay4l0203fmr].[cnt:address:qk]</cols>
+      </table>
+      <simple-id uuid='{36B9AC36-2CF6-4814-886C-50FC2D1A7EF9}' />
+    </worksheet>
+    <worksheet name='Different EV Cars in India'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Different EV Cars in India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='evindia (ev_project)' name='federated.10lsyn21pfw0981475trq0e1vfow' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10lsyn21pfw0981475trq0e1vfow'>
+            <column datatype='string' name='[Car]' role='dimension' type='nominal' />
+            <column datatype='real' name='[PriceRange(Lakhs)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Style]' role='dimension' type='nominal' />
+            <column-instance column='[Car]' derivation='None' name='[none:Car:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Style]' derivation='None' name='[none:Style:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PriceRange(Lakhs)]' derivation='Sum' name='[sum:PriceRange(Lakhs):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Car:nk]' direction='ASC' using='[federated.10lsyn21pfw0981475trq0e1vfow].[sum:PriceRange(Lakhs):qk]' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' />
+              <size column='[federated.10lsyn21pfw0981475trq0e1vfow].[sum:PriceRange(Lakhs):qk]' />
+              <text column='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Car:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D48E669D-4633-4882-98CD-962860EB3756}' />
+    </worksheet>
+    <worksheet name='EV Charging Stations Map of India'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>EV Charging Stations Map of India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electric_vehicle_charging_station_list (ev_project) (2)' name='federated.0j084j2017im3o1b0ay4l0203fmr' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Offline' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0j084j2017im3o1b0ay4l0203fmr'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0j084j2017im3o1b0ay4l0203fmr].[avg:longitude:qk]' field-type='quantitative' max='12922115.692040723' min='5664686.7992148716' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0j084j2017im3o1b0ay4l0203fmr].[avg:latitude:qk]' field-type='quantitative' max='4730961.1557099568' min='580489.84029088949' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' />
+              <lod column='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:type:nk]' />
+              <geometry column='[federated.0j084j2017im3o1b0ay4l0203fmr].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='14.547999382019043' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+                <format attr='has-halo' value='true' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0j084j2017im3o1b0ay4l0203fmr].[avg:latitude:qk]</rows>
+        <cols>[federated.0j084j2017im3o1b0ay4l0203fmr].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{8D60503E-4B76-47EC-9AA8-22F456370971}' />
+    </worksheet>
+    <worksheet name='KPI - Indain Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='20'>Total EV Brands in India</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='evindia (ev_project)' name='federated.10lsyn21pfw0981475trq0e1vfow' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10lsyn21pfw0981475trq0e1vfow'>
+            <column caption='Brand (India)' datatype='string' name='[Calculation_1063817431527425]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='LEFT([Car], FIND([Car], &quot; &quot;) - 1)' />
+            </column>
+            <column datatype='string' name='[Car]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1063817431527425]' derivation='Count' name='[cnt:Calculation_1063817431527425:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='width' value='1137' />
+            <format attr='height' value='299' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.10lsyn21pfw0981475trq0e1vfow].[cnt:Calculation_1063817431527425:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#e13f17' fontname='Tableau Bold' fontsize='11'>EV Brands available</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontcolor='#e13f17' fontname='Tableau Bold' fontsize='11'> in India</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='20'><![CDATA[<[federated.10lsyn21pfw0981475trq0e1vfow].[cnt:Calculation_1063817431527425:qk]> ]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.2430939674377441' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CDF1EC2D-1DEE-43C9-8F65-0005465A756E}' />
+    </worksheet>
+    <worksheet name='KPI – Global Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='20'>Total EV Brands Globally</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column caption='Total Global Brands' datatype='integer' name='[Calculation_1063817421295616]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNTD([Brand])' />
+            </column>
+            <column-instance column='[Calculation_1063817421295616]' derivation='User' name='[usr:Calculation_1063817421295616:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='width' value='1142' />
+            <format attr='height' value='351' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[usr:Calculation_1063817421295616:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontcolor='#e13f17' fontname='Tableau Bold' fontsize='11'>Total EV Brands </run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#e13f17' fontname='Tableau Bold' fontsize='11'>Worldwide</run>
+                <run>Æ&#10;</run>
+                <run bold='true' fontsize='20'><![CDATA[<[federated.05qfviv15hio7p18w7kqm1bgh25n].[usr:Calculation_1063817421295616:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='auto' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2.2430939674377441' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CA5532FA-05BF-487E-A15B-AA5F0DF40A6F}' />
+    </worksheet>
+    <worksheet name='No.of Models by each brand'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Number of Models by each Brand</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Model]' role='dimension' type='nominal' />
+            <column-instance column='[Model]' derivation='Count' name='[cnt:Model:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[cnt:Model:qk]' />
+              <color column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' />
+              <text column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{DB376920-57FE-456D-B6C9-D2BFA9ACFB29}' />
+    </worksheet>
+    <worksheet name='Price for Different Cars in India'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Price for Different Cars in India</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='evindia (ev_project)' name='federated.10lsyn21pfw0981475trq0e1vfow' />
+          </datasources>
+          <datasource-dependencies datasource='federated.10lsyn21pfw0981475trq0e1vfow'>
+            <column datatype='string' name='[Car]' role='dimension' type='nominal' />
+            <column datatype='real' name='[PriceRange(Lakhs)]' role='measure' type='quantitative' />
+            <column-instance column='[Car]' derivation='None' name='[none:Car:nk]' pivot='key' type='nominal' />
+            <column-instance column='[PriceRange(Lakhs)]' derivation='Sum' name='[sum:PriceRange(Lakhs):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Car:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.10lsyn21pfw0981475trq0e1vfow].[sum:PriceRange(Lakhs):qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.637182354927063' />
+                <format attr='mark-color' value='#e13f17' />
+                <format attr='mark-transparency' value='114' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.10lsyn21pfw0981475trq0e1vfow].[none:Car:nk]</rows>
+        <cols>[federated.10lsyn21pfw0981475trq0e1vfow].[sum:PriceRange(Lakhs):qk]</cols>
+      </table>
+      <simple-id uuid='{647DB917-8CFF-4EC0-8842-64008C12C551}' />
+    </worksheet>
+    <worksheet name='Top 10 Most Efficient EV Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Tableau Bold'>Top 10 Most Efficient EV Brands</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column caption='Efficiency WhKm' datatype='integer' name='[Efficiency_WhKm]' role='measure' type='quantitative' />
+            <column-instance column='[Efficiency_WhKm]' derivation='Avg' name='[avg:Efficiency_WhKm:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Efficiency_WhKm])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Brand:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:Efficiency_WhKm:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:Efficiency_WhKm:qk]' scope='cols' value='Average Efficiency (Wh/Km)' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#b07aa1' />
+                <format attr='mark-transparency' value='193' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]</rows>
+        <cols>[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:Efficiency_WhKm:qk]</cols>
+      </table>
+      <simple-id uuid='{4922E9B4-7DAE-45C5-8A7B-652E4EDF1C6D}' />
+    </worksheet>
+    <worksheet name='Top Speed for Different Brands'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Tableau Bold'>Top Speed for Different Brands</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='electriccardata_clean (ev_project)' name='federated.05qfviv15hio7p18w7kqm1bgh25n' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05qfviv15hio7p18w7kqm1bgh25n'>
+            <column datatype='string' name='[Brand]' role='dimension' type='nominal' />
+            <column caption='TopSpeed KmH' datatype='integer' name='[TopSpeed_KmH]' role='measure' type='quantitative' />
+            <column-instance column='[TopSpeed_KmH]' derivation='Avg' name='[avg:TopSpeed_KmH:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Brand]' derivation='None' name='[none:Brand:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:TopSpeed_KmH:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:TopSpeed_KmH:qk]' scope='rows' value='Average Top Speed KmH' />
+            <encoding attr='space' class='0' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:TopSpeed_KmH:qk]' field-type='quantitative' max='477.77105241860181' min='29.255461271461797' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' value='true' />
+            <format attr='text-orientation' field='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='mark-color' value='#a0cbe8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05qfviv15hio7p18w7kqm1bgh25n].[avg:TopSpeed_KmH:qk]</rows>
+        <cols>[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]</cols>
+      </table>
+      <simple-id uuid='{56E7EF1D-8995-47CB-9EF5-560D99DF8FC7}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard '>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#59a14f' fontname='Tableau Bold' fontsize='28'>ELECTRIC VEHICLE CHARGE AND RANGE ANALYSIS DASHBOARD</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='2300' maxwidth='2300' minheight='2300' minwidth='2300' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='99304' id='34' param='horz' type-v2='layout-flow' w='99304' x='348' y='348'>
+            <zone h='99304' id='20' type-v2='layout-basic' w='99304' x='348' y='348'>
+              <zone h='4565' id='7' type-v2='title' w='98956' x='522' y='522'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                  <format attr='background-color' value='#f0f7fa86' />
+                </zone-style>
+              </zone>
+              <zone h='5217' id='10' name='KPI – Global Brands' show-title='false' w='55893' x='43585' y='5087'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='0' />
+                  <format attr='background-color' value='#e6e6e681' />
+                </zone-style>
+              </zone>
+              <zone h='5217' id='11' name='KPI - Indain Brands' show-title='false' w='43063' x='522' y='5087'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='6' />
+                  <format attr='padding' value='0' />
+                  <format attr='background-color' value='#e6e6e686' />
+                </zone-style>
+              </zone>
+              <zone h='24000' id='13' name='Charging Stations by Region and Type in India' w='33704' x='522' y='10304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24000' id='15' name='EV Charging Stations Map of India' w='21275' x='40325' y='10304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24000' id='16' name='EV Charging Stations Map of India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' type-v2='color' w='6099' x='34226' y='10304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='dashed' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22739' id='18' name='No.of Models by each brand' w='38907' x='60571' y='34304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24479' id='25' name='Top Speed for Different Brands' w='43739' x='522' y='57043'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24479' id='26' name='Top Speed for Different Brands' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' type-v2='color' w='10782' x='44261' y='57043'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='dashed' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='24000' id='32' name='Different EV Cars in India' w='29819' x='61600' y='10304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone fixed-size='160' h='24000' id='33' is-fixed='true' param='vert' type-v2='layout-flow' w='8059' x='91419' y='10304'>
+                <zone h='7696' id='35' name='Different EV Cars in India' pane-specification-id='0' param='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' type-v2='color' w='8059' x='91419' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='22921' id='37' name='Brands According to BodyStyle' w='33304' x='66174' y='76557'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19514' id='39' name='Price for Different Cars in India' w='44435' x='55043' y='57043'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22921' id='38' name='Brands According to BodyStyle' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' type-v2='color' w='11131' x='55043' y='76557'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='dashed' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22739' id='43' name='Top 10 Most Efficient EV Brands' w='60049' x='522' y='34304'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17956' id='44' name='Brands Filtered by Power Train Type' w='54521' x='522' y='81522'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run fontalignment='1' fontcolor='#59a14f' fontname='Tableau Bold' fontsize='28'>ELECTRIC VEHICLE CHARGE AND RANGE ANALYSIS DASHBOARD</run>
+                <run fontalignment='1'>Æ&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='3200' minheight='3200' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='54' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99304' id='53' param='vert' type-v2='layout-flow' w='99304' x='348' y='348'>
+                <zone h='4565' id='7' type-v2='title' w='98956' x='522' y='522'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#f0f7fa86' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='106' h='5217' id='11' is-fixed='true' name='KPI - Indain Brands' show-title='false' w='43063' x='522' y='5087'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e686' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='106' h='5217' id='10' is-fixed='true' name='KPI – Global Brands' show-title='false' w='55893' x='43585' y='5087'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e681' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24000' id='13' is-fixed='true' name='Charging Stations by Region and Type in India' w='33704' x='522' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24000' id='15' is-fixed='true' name='EV Charging Stations Map of India' w='21275' x='40325' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24000' id='16' name='EV Charging Stations Map of India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' type-v2='color' w='6099' x='34226' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24000' id='32' is-fixed='true' name='Different EV Cars in India' w='29819' x='61600' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7696' id='35' name='Different EV Cars in India' pane-specification-id='0' param='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' type-v2='color' w='8059' x='91419' y='10304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='22739' id='43' is-fixed='true' name='Top 10 Most Efficient EV Brands' w='60049' x='522' y='34304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='22739' id='18' is-fixed='true' name='No.of Models by each brand' w='38907' x='60571' y='34304'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='24479' id='25' is-fixed='true' name='Top Speed for Different Brands' w='43739' x='522' y='57043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='24479' id='26' name='Top Speed for Different Brands' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' type-v2='color' w='10782' x='44261' y='57043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='19514' id='39' is-fixed='true' name='Price for Different Cars in India' w='44435' x='55043' y='57043'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='22921' id='37' is-fixed='true' name='Brands According to BodyStyle' w='33304' x='66174' y='76557'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='22921' id='38' name='Brands According to BodyStyle' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' type-v2='color' w='11131' x='55043' y='76557'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='dashed' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='17956' id='44' is-fixed='true' name='Brands Filtered by Power Train Type' w='54521' x='522' y='81522'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3146907E-B232-4964-B9F9-B5DE0A4611B0}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='45500' id='5' name='Charging Stations by Region and Type in India' w='82400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='52500' id='8' name='EV Charging Stations Map of India' w='82400' x='16800' y='46500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='52500' id='9' name='EV Charging Stations Map of India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' type-v2='color' w='16000' x='800' y='46500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='45500' id='6' name='Charging Stations by Region and Type in India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:type:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='45500' id='5' is-fixed='true' name='Charging Stations by Region and Type in India' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='45500' id='6' name='Charging Stations by Region and Type in India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:type:nk]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='52500' id='8' is-fixed='true' name='EV Charging Stations Map of India' w='82400' x='16800' y='46500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='52500' id='9' name='EV Charging Stations Map of India' pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' type-v2='color' w='16000' x='800' y='46500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{DE095FA8-80E1-45EA-81E5-997FC8805385}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='15' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='7' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='44876' id='5' param='horz' type-v2='layout-flow' w='79293' x='800' y='54124'>
+                <zone h='44876' id='13' name='Different EV Cars in India' w='79293' x='800' y='54124'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone h='53124' id='6' name='Brands According to BodyStyle' w='44100' x='800' y='1000'>
+                <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' non-cell-size-w='1' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='53124' id='10' name='Brands According to BodyStyle' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' type-v2='color' w='12400' x='44900' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='44876' id='16' name='Different EV Cars in India' pane-specification-id='0' param='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' type-v2='color' w='19107' x='80093' y='54124'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='53124' id='3' name='No.of Models by each brand' w='41900' x='57300' y='1000'>
+                <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' type-h='cell' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='19' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='53124' id='6' is-fixed='true' name='Brands According to BodyStyle' w='44100' x='800' y='1000'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' non-cell-size-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='53124' id='10' name='Brands According to BodyStyle' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' type-v2='color' w='12400' x='44900' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53124' id='3' is-fixed='true' name='No.of Models by each brand' w='41900' x='57300' y='1000'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' non-cell-size-h='49' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44876' id='13' is-fixed='true' name='Different EV Cars in India' w='79293' x='800' y='54124'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='44876' id='16' name='Different EV Cars in India' pane-specification-id='0' param='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' type-v2='color' w='19107' x='80093' y='54124'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7D1612D9-DC2C-4F20-81D4-B41D58CBB5D3}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='54250' id='3' name='Top Speed for Different Brands' w='79293' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='43750' id='9' name='Top 10 Most Efficient EV Brands' w='98400' x='800' y='55250'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='54250' id='8' name='Top Speed for Different Brands' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' type-v2='color' w='19107' x='80093' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='14' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='54250' id='3' is-fixed='true' name='Top Speed for Different Brands' w='79293' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='54250' id='8' name='Top Speed for Different Brands' pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' type-v2='color' w='19107' x='80093' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43750' id='9' is-fixed='true' name='Top 10 Most Efficient EV Brands' w='98400' x='800' y='55250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C52435CD-55F7-4B20-A311-BFF720255958}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Price for Different Cars in India' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='solid' />
+              <format attr='border-width' value='1' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='10' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='9' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Price for Different Cars in India' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{365CB769-0831-42DA-AAA1-9192206DFD29}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 6'>
+      <style />
+      <size maxheight='554' maxwidth='769' minheight='554' minwidth='769' preset-index='13' sizing-mode='fixed' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='46390' id='6' param='horz' type-v2='layout-flow' w='97920' x='1040' y='1444'>
+            <zone h='46390' id='8' name='KPI – Global Brands' w='97920' x='1040' y='1444'>
+              <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#e6e6e686' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='50722' id='7' param='horz' type-v2='layout-flow' w='97920' x='1040' y='47834'>
+            <zone h='50722' id='9' name='KPI - Indain Brands' w='97920' x='1040' y='47834'>
+              <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='1' />
+                <format attr='margin' value='4' />
+                <format attr='background-color' value='#e6e6e686' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97112' id='14' param='vert' type-v2='layout-flow' w='97920' x='1040' y='1444'>
+                <zone fixed-size='247' h='46390' id='8' is-fixed='true' name='KPI – Global Brands' w='97920' x='1040' y='1444'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e686' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='271' h='50722' id='9' is-fixed='true' name='KPI - Indain Brands' w='97920' x='1040' y='47834'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#e6e6e686' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D5E5BE24-10B2-41C9-AC4B-73B18919B622}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 7'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Brands Filtered by Power Train Type' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='7' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Brands Filtered by Power Train Type' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{034B2E7B-A3FD-4E8F-8767-48CC84E31920}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Tableau Bold' fontsize='24'>Electric Vehicle Charge and Range Analysis</run>
+            <run>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='story-description'>
+          <format attr='font-style' id='story-description_7' value='normal' />
+          <format attr='font-weight' id='story-description_7' value='normal' />
+          <format attr='text-decoration' id='story-description_7' value='none' />
+        </style-rule>
+        <style-rule element='story-point-caption'>
+          <format attr='width' value='666' />
+        </style-rule>
+      </style>
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='5602' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='6432' />
+            <zone h='82261' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='16909'>
+              <flipboard active-id='9' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='A Data Visualization Project Using Tableau&#10;' captured-sheet='Dashboard 6' id='1' />
+                  <story-point caption='EV Charging Infrastructure in India&#10;' captured-sheet='Dashboard 2' id='5' />
+                  <story-point caption='Brand &amp; Model Distribution' captured-sheet='Dashboard 3' id='6' />
+                  <story-point caption='Performance &amp; Efficiency' captured-sheet='Dashboard 4' id='7' />
+                  <story-point caption='Price Analysis (India)' captured-sheet='Dashboard 5' id='8' />
+                  <story-point caption='Power Train Analysis' captured-sheet='Dashboard 7' id='9' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='11203' hidden='true' id='8' story-point-id='8' type-v2='text' w='52264' x='42126' y='63797'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='11'>Luxury EVs such as Audi and Porsche are priced higher,</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='11'>while Tata and MG offer affordable options.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='7780' hidden='true' id='9' story-point-id='7' type-v2='text' w='33268' x='41732' y='26349'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='10'>Byton and Jaguar show high efficiency.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='10'>Performance varies significantly across brands.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' forceUpdate='true' h='10373' hidden='true' id='10' story-point-id='6' type-v2='text' w='25295' x='71555' y='79149'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>This section analyzes EV brand presence and model distribution across different body styles in India.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='10373' hidden='true' id='11' story-point-id='5' type-v2='text' w='24311' x='51280' y='35062'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='11'>NDMC region has the highest charging station count.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+            <run fontalignment='0' fontsize='11'>Charging infrastructure is concentrated in major cities.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='7780' hidden='true' id='12' story-point-id='1' type-v2='text' w='33268' x='41437' y='45539'>
+          <formatted-text>
+            <run fontalignment='0' fontsize='11'>The global EV market consists of 32 brands, while India currently has 12 active EV brands.</run>
+            <run fontalignment='0'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone flipboard-zone-id='5' h='11722' id='13' story-point-id='9' type-v2='text' w='33268' x='45965' y='53112'>
+          <formatted-text>
+            <run fontalignment='0' fontcolor='#000000' fontname='Benton Sans Book' fontsize='11'>This section evaluates EV brands based on power train type and technology distribution.</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <simple-id uuid='{623A9B0F-699D-45DB-8639-C1E7D92C0E95}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='89'>
+    <window class='worksheet' name='Charging Stations by Region and Type in India'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:type:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{ACB4551F-98D7-4AD9-AE9E-CFE0AA7FB594}' />
+    </window>
+    <window class='worksheet' name='EV Charging Stations Map of India'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0j084j2017im3o1b0ay4l0203fmr].[none:region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='4' />
+        <map-navigation value='1' />
+      </viewpoint>
+      <simple-id uuid='{6CDAA78C-2C72-4586-9732-3EC050173383}' />
+    </window>
+    <window class='worksheet' name='No.of Models by each brand'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{D574F72E-55FA-4E5D-A182-FCB053BA5769}' />
+    </window>
+    <window class='worksheet' name='Brands According to BodyStyle'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:BodyStyle:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{AD4C8159-917C-4C78-9502-0F57ECD7160C}' />
+    </window>
+    <window class='worksheet' name='Different EV Cars in India'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.10lsyn21pfw0981475trq0e1vfow].[none:Style:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{58C8AB4D-3E1E-4C52-89D3-99FAB1CE27BA}' />
+    </window>
+    <window class='worksheet' name='Top Speed for Different Brands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.05qfviv15hio7p18w7kqm1bgh25n].[none:Brand:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{7D061F4B-A3A4-4342-9544-C1F8007EAD03}' />
+    </window>
+    <window class='worksheet' name='Price for Different Cars in India'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C2DDF6AC-11C2-4E88-8887-793D90156924}' />
+    </window>
+    <window class='worksheet' name='Top 10 Most Efficient EV Brands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{14DC82CA-D832-4C80-B047-E0B3E5BB1E75}' />
+    </window>
+    <window class='worksheet' name='Brands Filtered by Power Train Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{B29D5D31-0F4A-4CFE-BFFF-84D82E91FFAC}' />
+    </window>
+    <window class='worksheet' name='KPI – Global Brands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3546BADF-BD17-4509-87AD-9B7EC88A3AA5}' />
+    </window>
+    <window class='worksheet' name='KPI - Indain Brands'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71A79CE5-CD99-4542-B917-CDC8240935FB}' />
+    </window>
+    <window class='dashboard' name='Dashboard '>
+      <viewpoints>
+        <viewpoint name='Brands According to BodyStyle'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Brands Filtered by Power Train Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Charging Stations by Region and Type in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Different EV Cars in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EV Charging Stations Map of India'>
+          <zoom type='entire-view' />
+          <map-navigation value='1' />
+        </viewpoint>
+        <viewpoint name='KPI - Indain Brands' />
+        <viewpoint name='KPI – Global Brands' />
+        <viewpoint name='No.of Models by each brand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Price for Different Cars in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 Most Efficient EV Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Speed for Different Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='43' />
+      <device-preview selected='Desktop'>
+        <device name='Large Desktop Monitor' type='Desktop' />
+      </device-preview>
+      <simple-id uuid='{37CCA22B-6E80-41DD-812B-8FF186A01A3B}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{A94685E0-F05E-4C43-847D-7C22B2089244}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Charging Stations by Region and Type in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='EV Charging Stations Map of India'>
+          <zoom type='entire-view' />
+          <map-navigation value='1' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{863F344D-E2A6-4E07-A809-D38183BD500A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Brands According to BodyStyle'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Different EV Cars in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='No.of Models by each brand'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{F84F09E9-8B8D-41E4-AD0E-886F17500C08}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='Top 10 Most Efficient EV Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top Speed for Different Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{85A17DF2-2DBD-4A40-A333-A32C458843A1}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='Price for Different Cars in India'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{577A812A-AB27-4120-8303-B8761E9C4685}' />
+    </window>
+    <window class='dashboard' name='Dashboard 6'>
+      <viewpoints>
+        <viewpoint name='KPI - Indain Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI – Global Brands'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9653E85D-6115-44DF-ACBF-57019BE2BDFF}' />
+    </window>
+    <window class='dashboard' name='Dashboard 7'>
+      <viewpoints>
+        <viewpoint name='Brands Filtered by Power Train Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5C95923E-7F20-473B-8524-44F76C0C4576}' />
+    </window>
+  </windows>
+</workbook>
